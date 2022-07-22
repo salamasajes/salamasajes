@@ -1,0 +1,56 @@
+body {
+	background-color: #F0F8FF;
+}
+
+header {
+	background-color: white;
+}
+
+.cover {
+	height: 500px;
+	background-image: url(imagenes/masajes-inicio.jpg);
+	color: white;
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0,0,0,0.5);
+	background-blend-mode: darken;
+}
+
+.main-title {
+	font-family: 'Playfair Display SC', bold;
+	font-size: 325%;
+}
+
+.masajes {
+	height: 175px;
+	text-align: center;
+}
+
+.cover-small {
+	height: 200px;
+	background-blend-mode: normal;
+}
+
+.card-title {
+	min-height: 3rem;
+}
+
+.card-text {
+	min-height: 3rem;
+}
+
+.tipos-masajes {
+	height: 350px;
+	text-align: center;
+}
+
+
+.cita {
+	text-align: center;
+	max-width: 500px;
+	margin: auto;
+}
+
+.cover2 {
+	height: 400px;
+}
