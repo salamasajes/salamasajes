@@ -6,6 +6,10 @@ header {
 	background-color: white;
 }
 
+footer {
+	background-color: gray;
+}
+
 .cover {
 	height: 500px;
 	background-image: url(imagenes/masajes-inicio.jpg);
@@ -39,12 +43,6 @@ header {
 	min-height: 3rem;
 }
 
-.tipos-masajes {
-	height: 350px;
-	text-align: center;
-}
-
-
 .cita {
 	text-align: center;
 	max-width: 500px;
@@ -53,4 +51,12 @@ header {
 
 .cover2 {
 	height: 400px;
+}
+
+.contacto {
+	color: white;
+}
+
+.list-group {
+	max-width: 500px;
 }
