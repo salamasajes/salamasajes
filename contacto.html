@@ -10,8 +10,14 @@
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript"
+		  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+		<script type="text/javascript">
+		  emailjs.init('I8sbElw-8RXkFKUno')
+		</script>
 	</head>
+	
 	<body>
 		<header>
 			<nav>
@@ -19,9 +25,9 @@
 				  <li class="nav-item ">
 					<a class="nav-link" href="index.html">Inicio</a>
 				  </li>
-				  <!-- <li class="nav-item">
+				  <li class="nav-item">
 					<a class="nav-link" href="masajes.html">Masajes</a>
-				  </li> -->
+				  </li>
 				  <li class="nav-item">
 					<a class="nav-link" href="precios.html">Precios</a>
 				  </li>
@@ -30,49 +36,56 @@
 				  </li>
 				</ul>
 			</nav>
-			
 			<div class="cover cover2 d-flex justify-content-center align-items-center flex-column">
 				<h1 class="main-title">CONTACTO</h1>
 			</div>
 		</header>
 		
 		<section class="justify-content-center">
-			<div class="cita card container mt-5 mb-5">
+			<!-- nuevo -->
+			<div class="cita card container mt-5 mb-5 flex-fill">
 				<h3 class="class-text mt-3">Pide tu cita</h3>
-				<form method="post" action="mailto:eliassalamasaje@gmail.com" enctype="text/plain">
+				<form id="form">
 					<div class="mb-3">
-						<label for="exampleInputNombre1" class="form-label">Nombre</label>
-						<input type="text" class="form-control" id="exampleInputNombre1">
+						<label for="from_name" class="form-label">Nombre</label>
+						<input type="text" class="form-control" name="from_name" id="from_name" required>
 					</div>
 					<div class="mb-3">
-						<label for="exampleInputEmail1" class="form-label">Email</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<label for="from_email" class="form-label">Email</label>
+						<input type="email" class="form-control" name="from_email" id="from_email" aria-describedby="emailHelp" required>
 						<div id="emailHelp" class="form-text">No compartiremos tu dirección de correo con nadie más.</div>
 					</div>	
 					<div class="mb-3">
-						<label for="exampleInputFecha1" class="form-label">Fecha para el masaje</label>
-						<input type="date" class="form-control" id="exampleInputFecha1">
+						<label for="fecha" class="form-label">Fecha para el masaje</label>
+						<input type="date" class="form-control" name="fecha" id="fecha" required>
 					</div>	
 					<div class="mb-3">
-						<label for="exampleInputHora1" class="form-label">Hora</label>
-						<input type="time" class="form-control" min="10:00" max="20:00" id="exampleInputHora1">
+						<label for="hora" class="form-label">Hora</label>
+						<input type="time" class="form-control" min="10:00" max="20:00" name="hora" id="hora" required>
 					</div>
 					<div class="mb-3">
-						<label for="exampleInputMasaje1" class="form-label">Tipo de masaje</label>
-						<select class="form-select" aria-label="Tipo de masaje">
+						<label  for="tipo_masaje" class="form-label">Tipo de masaje</label>
+						<select class="form-select" aria-label="Tipo de masaje" name="tipo_masaje" id="tipo_masaje" required>
 							<option selected>Masaje Facial</option>
 							<option value="1">Masaje Espalda</option>
 							<option value="2">Masaje Piernas</option>
 							<option value="3">Masaje Pies</option>
 							<option value="4">Masaje Piernas y Pies</option>
 							<option value="5">Masaje Combinado</option>
+							<option value="6">Suscripción Básica</option>
+							<option value="7">Suscripción Premium</option>
+							<option value="8">Suscripción Dúo</option>
+							<option value="9">Suscripción Familiar</option>
 						</select>
 					</div>
-					<button type="submit" class="btn btn-primary mb-3">Enviar</button>
+					<input type="submit" id="button" value="Enviar" >
 				</form>
 			</div>
 		</section>
 		
+		<script src="app.js"></script>
+		
+		<!-- nuevo -->
 		<footer class="d-flex flex-fill justify-content-center align-content-center">
 			<div style="text-align: center;" class="container">
 				<div class="row justify-content-center align-content-center">
