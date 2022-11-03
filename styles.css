@@ -10,15 +10,6 @@ footer {
 	background-color: gray;
 }
 
-input[type="submit"] {
-  padding: 6px 30px;
-  font-size: 14px;
-  background-color: #4460AA;
-  color: #fff;
-  border: none,
-  margin-bottom: 10px
-}
-
 .cover {
 	height: 500px;
 	background-image: url(imagenes/masajes-inicio.jpg);
